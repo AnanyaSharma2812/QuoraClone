@@ -5,20 +5,20 @@ import com.example.questionsAndAnswersMicroservice.dto.CategoryDto;
 import com.example.questionsAndAnswersMicroservice.services.CategoryServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 
 @RestController
 @RequestMapping("/category")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class CategoryController {
 
     @Autowired
     CategoryServices categoryServices;
 
-    @PostMapping("/addQuestionToACategory/")
-    public ResponseEntity<String> addQuestionToACategory(CategoryDto categoryDto) {
-        return categoryServices.addQuestionToACategory(categoryDto);
+    @PostMapping("/addCategories")
+    public ResponseEntity<String> addCategories(@RequestBody CategoryDto categoryDto) {
+        return categoryServices.addCategories(categoryDto);
     }
+
 }

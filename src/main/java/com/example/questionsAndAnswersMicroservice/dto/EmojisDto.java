@@ -9,7 +9,9 @@ import lombok.ToString;
 @ToString
 public class EmojisDto
 {
-    private String emojisValue;
-    private String profileId;
-    private String questionOrAnswerId;
+    private String emojisValue="";
+    private String profileId="";
+    private String questionOrAnswerId="";
+    private String profileName="";
+    private String askerOrAnswererId="";
 }

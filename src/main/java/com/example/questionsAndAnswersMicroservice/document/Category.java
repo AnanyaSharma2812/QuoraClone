@@ -6,6 +6,7 @@ import lombok.ToString;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,8 +17,8 @@ import java.util.List;
 public class Category
 {
     @Id
-    private String categoryId;
-    private String categoryName;
+    private String categoryId="";
+    private String categoryName="";
     private List<String> questionIdList=new ArrayList<>();
 
 }

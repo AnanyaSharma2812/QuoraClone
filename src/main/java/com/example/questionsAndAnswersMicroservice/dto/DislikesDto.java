@@ -9,7 +9,9 @@ import lombok.ToString;
 @ToString
 public class DislikesDto
 {
-    String profileId;
-    String questionOrAnswerId;
+    private String profileId="";
+    private String questionOrAnswerId="";
+    private String profileName="";
+    private String askerOrAnswererId="";
 
 }

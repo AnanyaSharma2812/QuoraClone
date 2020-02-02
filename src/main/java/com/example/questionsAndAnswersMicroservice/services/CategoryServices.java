@@ -4,5 +4,8 @@ import com.example.questionsAndAnswersMicroservice.dto.CategoryDto;
 import org.springframework.http.ResponseEntity;
 
 public interface CategoryServices {
-    ResponseEntity<String> addQuestionToACategory(CategoryDto categoryDto);
+
+    String addQuestionToACategory(String categoryId,String questionId);
+
+    ResponseEntity<String> addCategories(CategoryDto categoryDto);
 }

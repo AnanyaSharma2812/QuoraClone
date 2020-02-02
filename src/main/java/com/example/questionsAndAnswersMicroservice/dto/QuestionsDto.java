@@ -12,29 +12,35 @@ import java.util.List;
 @ToString
 public class QuestionsDto
 {
-    private String questionId;
-    private String questionValue;
-    private Boolean questionStatus;
+    private String questionId="";
+    private String questionValue="";
+    private Boolean questionStatus=false;
 
-    private String askerProfileId;
-    private String askerProfileName;
+    private String categoryId="";
+    private String categoryName="";
 
-    private String profileWhereAskedId;
-    private String profileWhereAskedName;
-    private String profileWhereAskedType;
+    private String askerProfileId="";
+    private String askerProfileName="";
 
-    private int numberOfLikes;
+    private String profileWhereAskedId="";
+    private String profileWhereAskedName="";
+    private String profileWhereAskedType="";
+
+    private int numberOfLikes=0;
     private List<String> likeProfileIdList=new ArrayList<>();
 
-    private int numberOfDislikes;
+    private int numberOfDislikes=0;
     private List<String> dislikeProfileIdList=new ArrayList<>();
 
     private List<String> emojisValue=new ArrayList<>();
     private List<String> emojisProfileIdList=new ArrayList<>();
 
-    private Boolean isThreadOpen;
+    private Boolean isThreadOpen=true;
 
     private List<String> answerIdList=new ArrayList<>();
 
-    private String approvedAnswerId;
+    private String approvedAnswerId="";
+    private String approvedAnswer="";
+    private String approvedAnswererId="";
+    private String approvedAnswererProfile="";
 }

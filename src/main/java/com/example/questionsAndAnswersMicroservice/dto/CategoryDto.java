@@ -9,8 +9,8 @@ import lombok.ToString;
 public class CategoryDto
 {
 
-    private String categoryName;
-    private String categoryId;
-    private String questionId;
+    private String categoryName="";
+    private String categoryId="";
+    private String questionId="";
 
 }
